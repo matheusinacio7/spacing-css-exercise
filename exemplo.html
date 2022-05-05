@@ -9,9 +9,29 @@
   <title>Widget</title>
 </head>
 <body>
-  <e-icon icon="back"></e-icon>
-  <e-icon icon="close"></e-icon>
-  <e-icon icon="idea"></e-icon>
-  <e-icon icon="camera"></e-icon>
+  <aside class="widget">
+    <header>
+      <button><e-icon icon="back"></e-icon></button>
+      <h1>
+        <e-icon icon="idea"></e-icon>
+        <span>Ideia</span>
+      </h1>
+      <button><e-icon icon="close"></e-icon></button>
+    </header>
+    <form>
+      <textarea placeholder="Teve uma ideia de melhoria ou de nova funcionalidade? Conta pra gente!" class="text-input"></textarea>
+      <div class="form-controls">
+        <button class="screenshot-button">
+          <e-icon icon="camera"></e-icon>
+        </button>
+        <button class="submit-button">
+          Enviar feedback
+        </button>
+      </div>
+    </form>
+    <footer>
+      <p>Feito com ♥ pela Rocketseat</p>
+    </footer>
+  </aside>
 </body>
 </html>

@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   --brand: #8257E5;
+  --brand-hover: #996DFF;
   --bg-dark: #09090A;
   --stroke: #52525B;
   --text-on-brand: #FFFFFF;
@@ -10,6 +11,7 @@ html {
   --text-secondary: #A1A1AA;
   --surface-primary: #18181B;
   --surface-secondary: #27272A;
+  --surface-secondary-hover: #3F3F46;
 }
 
 html, input, textarea {
@@ -41,4 +43,108 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 264px;
+  width: 336px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--surface-primary);
+  filter: drop-shadow(0px 8px 32px rgba(0, 0, 0, 0.15));
+}
+
+.widget header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget header h1 {
+  display: flex;
+  gap: 8px;
+  color: var(--text-primary);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: medium;
+}
+
+.widget form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text-input {
+  width: 100%;
+  border-radius: 4px;
+  flex: 1;
+  resize: none;
+  border: 1px var(--stroke) solid;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: normal;
+  padding: 8px 12px;
+}
+
+.text-input:focus {
+  border: 2px var(--brand) solid;
+  padding: 7px 11px;
+  outline: none;
+}
+
+.text-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+.form-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.screenshot-button {
+  border-radius: 4px;
+  padding: 8px;
+  background-color: var(--surface-secondary);
+}
+
+.screenshot-button:hover:not(.disabled) {
+  background-color: var(--surface-secondary-hover);
+}
+
+.screenshot-button.disabled {
+  opacity: 0.5;
+}
+
+.submit-button {
+  padding: 8px;
+  flex: 1;
+  border-radius: 4px;
+  background-color: var(--brand);
+  color: var(--text-on-brand);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: medium;
+}
+
+.submit-button:hover:not(.disabled) {
+  background-color: var(--brand-hover);
+}
+
+.submit-button.disabled {
+  opacity: 0.5;
+}
+
+.widget footer {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: medium;
+  text-align: center;
 }
