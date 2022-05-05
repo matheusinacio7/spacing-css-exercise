@@ -2,14 +2,18 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;  
   --brand: #8257E5;
   --bg-dark: #09090A;
   --stroke: #52525B;
+  --text-on-brand: #FFFFFF;
   --text-primary: #F4F4F5;
   --text-secondary: #A1A1AA;
   --surface-primary: #18181B;
   --surface-secondary: #27272A;
+}
+
+html, input, textarea {
+  font-family: 'Inter', sans-serif;
 }
 
 html, body {
@@ -27,8 +31,14 @@ body {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, button {
   margin: 0;
   padding: 0;
   font-weight: normal;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

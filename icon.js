@@ -28,6 +28,9 @@ class Icon extends HTMLElement {
     super();
 
     this.innerHTML = icons[this.getAttribute('icon')];
+    this.style.display = 'block';
+    this.style.height = '24px';
+    this.style.width = '24px';
   }
 }
 
