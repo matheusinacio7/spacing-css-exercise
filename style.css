@@ -42,3 +42,68 @@ button {
   border: none;
   cursor: pointer;
 }
+
+main {
+  display: flex;
+  flex-flow: column;
+  padding: 15px;
+  background-color: var(--surface-primary);
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.idea {
+  display: flex;
+  color: var(--text-on-brand);
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: large;
+}
+
+.new-idea-comment {
+  background-color: var(--surface-primary);
+  border-radius: 3px;
+  resize: none;
+}
+
+textarea {
+  padding: 10px;
+  color: var(--text-secondary);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-flow: column;
+}
+
+form div {
+  display: flex;
+  gap: 10px;
+}
+.camera {
+  background-color: var(--surface-secondary);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+button {
+  color: var(--text-secondary);
+  background-color: var(--brand);
+  border-radius: 3px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: small;
+  color: var(--text-secondary);
+}

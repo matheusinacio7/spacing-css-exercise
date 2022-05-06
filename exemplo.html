@@ -9,9 +9,23 @@
   <title>Widget</title>
 </head>
 <body>
-  <e-icon icon="back"></e-icon>
-  <e-icon icon="close"></e-icon>
-  <e-icon icon="idea"></e-icon>
-  <e-icon icon="camera"></e-icon>
+  <main>
+    <header class="header">
+      <e-icon icon="back"></e-icon>
+      <div class="idea">
+        <e-icon icon="idea"></e-icon>
+        <h1>Ideia</h1>
+      </div>
+      <e-icon icon="close"></e-icon>
+    </header>
+    <form>
+      <textarea class="new-idea-comment" name="new-idea" id="new-idea" cols="29" rows="5" placeholder="Teve uma ideia de melhoria ou de nova funcionalidade? Conta pra gente!"></textarea>
+      <div>
+        <div class="camera"><e-icon icon="camera"></e-icon></div>
+        <button>Enviar feedback</button>
+      </div>
+    </form>
+    <footer>Feito com &#10084 por <em>Bruno Pessoa</em></footer>
+  </main>
 </body>
 </html>
