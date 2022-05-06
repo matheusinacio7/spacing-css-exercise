@@ -58,9 +58,13 @@ main {
   gap: 10px;
 }
 
-.top-section {
+.header {
   display: flex;
   justify-content: space-between;
+}
+
+.header h1 {
+  font-size: large;
 }
 
 .new-idea-comment {
@@ -74,25 +78,30 @@ textarea {
   color: var(--text-secondary);
 }
 
-.feedback {
+form {
+  display: flex;
+  gap: 10px;
+  flex-flow: column;
+}
+
+form div {
   display: flex;
   gap: 10px;
 }
-
 .camera {
   background-color: var(--surface-secondary);
   padding: 5px;
   border-radius: 3px;
 }
 
-.feedback button {
+button {
   color: var(--text-secondary);
   background-color: var(--brand);
   border-radius: 3px;
   width: 100%;
 }
 
-p {
+footer {
   text-align: center;
   color: white;
   font-size: small;
